@@ -1,0 +1,40 @@
+:root {
+  --inter-primary: #360023;
+  --inter-secondary: #ec6d64;
+  --inter-tertiary: #ef8277;
+  --color-1:#922c88;
+  --color-2:#382b6f;
+  --color-3:#03A9F4;
+  --ds-bg-1:#BDBDBD;
+  --ds-txt-1:#676767;
+  --ds-txt-2:#808183;
+  --ds-txt-3:#a5a5a5;
+  --ds-txt-4:#922c88;
+  --ds-txt-5:#a2de5f;
+  --ds-txt-xs:12px;
+  --ds-txt-md:16px;
+  --ds-txt-lg:20px;
+  --toolbar-bg:#fff;
+  --el-card-border-radius:10px;
+  /* RESPUESTAS */
+  --http-200:#1eee78;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+.hide-text{
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
