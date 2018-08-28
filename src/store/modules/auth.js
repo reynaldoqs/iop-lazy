@@ -5,7 +5,7 @@ import {
   AUTH_SUCCESS,
   AUTH_LOGOUT
 } from '../actions/auth'
-import loginApi from '@/services/loginService'
+import loginApi from '@/services/auth'
 
 const state = {
   user: JSON.parse(localStorage.getItem('user')) || '',
@@ -30,6 +30,7 @@ const mutations = {
     state.hasLoadedOnce = true
   },
   [AUTH_ERROR]: state => {
+    localStorage.clear();
     state.status = 'error'
     state.hasLoadedOnce = true
   },
@@ -43,7 +44,7 @@ const actions = {
     context.commit(AUTH_REQUEST)
     return new Promise((resolve, reject) => {
       loginApi
-        .serviceLogin(creds)
+        .login(creds)
         .then(data => {
           let user = data
           localStorage.setItem('user', JSON.stringify(user))

@@ -1,10 +1,10 @@
 <template>
   <div class="iop-chart-container">
-    <line-chart style="max-height:150px;" :chart-data="servicios" :chart-labels="labels" :options="options" />
+    <line-chart style="max-height:270px" :chart-data="servicios" :chart-labels="labels" :options="options"/>
   </div>
 </template>
 <script>
-import LineChart from "@/app/charts/LineChart";
+import LineChart from "@/shared/charts/LineChart";
 import _c from "@/utils/colors";
 export default {
   data: () => ({
@@ -14,11 +14,12 @@ export default {
           {
             ticks: {
               display: true,
-              fontColor: "white",
+              fontColor: "#a5a5a5",
               beginAtZero: true
             },
             gridLines: {
-              display: false
+              display: true,
+              color: "#f5f5f5"
             }
           }
         ],
@@ -27,10 +28,11 @@ export default {
             display: true,
             ticks: {
               display: true,
-              fontColor: "white"
+              fontColor: "#a5a5a5"
             },
             gridLines: {
-              display: false
+              display: true,
+              color: "#f5f5f5"
             }
           }
         ]
@@ -57,8 +59,8 @@ export default {
     ],
     servicio: [
       {
-        nombre: "Prueba",
-        recurencia: [1, 4, 1, 3, 5, 6, 7],
+        nombre: "Pruebxxxa8",
+        recurencia: [3700, 1999, 5800, 7500, 5000, 6000, 7876],
         active: true
       }
     ]
@@ -84,7 +86,7 @@ export default {
               pointBorderWidth: 1.5,
               pointRadius: 6,
               steppedLine: false,
-              backgroundColor: _c.getRgba(servicio.nombre, 0.09),
+              backgroundColor: _c.getRgba(servicio.nombre, 0.06),
               fill: true,
               data: servicio.recurencia,
               active: servicio.active
@@ -100,5 +102,6 @@ export default {
 <style scoped>
 .iop-chart-container {
   padding-left: 5px;
+  padding-top: 20px;
 }
 </style>

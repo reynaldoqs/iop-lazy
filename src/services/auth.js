@@ -1,17 +1,16 @@
 import axios from 'axios'
 export default {
-  serviceLogin(creds) {
-    console.log(creds)
-    return axios
-      .post('/auth', creds)
-      .then(data => {
-        console.log(data)
-        return data.data
-      })
-      .catch(err => {
-        console.log(err.response)
-        return err.response.data.error
-      })
+  login(creds) {
+    return new Promise((resolve, reject) => {
+      axios
+        .post('/auth', creds)
+        .then(data => {
+          resolve(data.data)
+        })
+        .catch(err => {
+          reject(err.response.data.error)
+        })
+    })
   },
   serviceRestPassword(idChange, data) {
     return axios

@@ -7,8 +7,8 @@
     </div>
 </template>
 <script>
-import NotificationsHeader from "@/app/components/NotificationsHeader";
-import NotificationCard from "@/app/components/NotificationCard";
+import NotificationsHeader from "@/shared/components/NotificationsHeader";
+import NotificationCard from "@/shared/components/NotificationCard";
 export default {
   data: () => ({
     noticias: [

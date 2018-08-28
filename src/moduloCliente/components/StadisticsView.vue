@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import MainStadisticsCard from "@/app/components/MainStadisticsCard";
+import MainStadisticsCard from "@/shared/components/MainStadisticsCard";
 export default {
   components: {
     MainStadisticsCard

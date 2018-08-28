@@ -20,7 +20,7 @@
 </template>
 <script>
 import { Loading } from "element-ui";
-import UserCard from "@/app/components/UserCard";
+import UserCard from "@/shared/components/UserCard";
 export default {
   data: () => ({
     isLoaded: false,

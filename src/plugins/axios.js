@@ -5,7 +5,7 @@ import store from "@/store/index"
 
 Axios.defaults.baseURL = BASE_URL;
 Axios.defaults.headers.common.Accept = 'application/json';
-Axios.interceptors.response.use(
+/* Axios.interceptors.response.use(
     response => response,
     (error) => {
         if (error.response.status === 401) {
@@ -15,7 +15,7 @@ Axios.interceptors.response.use(
         }
         return Promise.reject(error);
     },
-);
+); */
 if (store.getters['isAuthenticated']) {
     let token = JSON.parse(localStorage.getItem("user")).accesos.token;
     Axios.defaults.headers.common["Authorization"] = token;

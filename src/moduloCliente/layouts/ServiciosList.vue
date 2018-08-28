@@ -12,7 +12,7 @@
 </template>
 <script>
 import serviciosApi from "@/services/servicios";
-import ServiciosCard from "@/app/components/ServiciosCard";
+import ServiciosCard from "@/shared/components/ServiciosCard";
 export default {
   components: {
     ServiciosCard

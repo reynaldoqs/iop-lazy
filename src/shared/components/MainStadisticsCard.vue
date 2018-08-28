@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import MainStadistics from "@/app/components/MainStadistics";
+import MainStadistics from "@/shared/components/MainStadistics";
 export default {
   data: () => ({
     estilos: {

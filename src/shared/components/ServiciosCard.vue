@@ -28,7 +28,7 @@
   </div>
 </template>
 <script>
-import ServiciosEstadistica from "@/app/components/ServiciosEstadistica";
+import ServiciosEstadistica from "@/shared/components/ServiciosEstadistica";
 export default {
   data: () => ({
     estilos: {

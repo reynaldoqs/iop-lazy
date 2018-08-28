@@ -1,25 +1,26 @@
 <template>
-    <div>
-        <el-container>
-        <el-header height="auto">
-      <tool-bar/>
-    </el-header>
-        <el-main>Main</el-main>
-        </el-container>
+  <div class="main">
+    <header-layout/>
+    <div class="rest">
+      resto de la pagina
     </div>
+  </div>
 </template>
 <script>
-import ToolBar from "@/app/components/ToolBar";
+import HeaderLayout from "@/moduloUsuario/layouts/HeaderLayout";
 export default {
   components: {
-    ToolBar
+    HeaderLayout
   }
 };
 </script>
 
 <style scoped>
-.el-header {
-  background-color: #191919;
+.main {
+  background-color: #fff;
+}
+.rest {
   width: 100%;
+  height: 500px;
 }
 </style>

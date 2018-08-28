@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import Modal from "@/app/views/Modal";
+import Modal from "@/shared/Modal";
 export default {
   name: "app",
   components: {

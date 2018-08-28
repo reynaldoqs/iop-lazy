@@ -18,9 +18,9 @@
 </div>
 </template>
 <script>
-import ToolBar from "@/app/components/ToolBar";
-import SideBar from "@/moduloCliente/components/SideBar";
-import NotificationsBar from "@/app/components/NotificationsBar";
+import ToolBar from "@/shared/components/ToolBar";
+import SideBar from "@/moduloCliente/layouts/SideBar";
+import NotificationsBar from "@/shared/components/NotificationsBar";
 import { mapGetters } from "vuex";
 
 export default {

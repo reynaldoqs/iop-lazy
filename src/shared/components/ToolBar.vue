@@ -23,8 +23,8 @@
     </div>
 </template>
 <script>
-import Avatar from "@/app/components/Avatar";
-import NavMenu from "@/app/components/NavMenu";
+import Avatar from "@/shared/components/Avatar";
+import NavMenu from "@/shared/components/NavMenu";
 export default {
   data: () => ({
     imgIconZise: 22,
